@@ -1,15 +1,25 @@
 {
     "manifest_version": 3,
-    "name": "Context Menu Test",
+    "name": "KeySwap Eng-Thai",
     "version": "1.0",
     "description": "A simple context menu extension",
     "permissions": [
         "contextMenus",
-        "activeTab",
-        "scripting"
+        "scripting",
+        "activeTab"
     ],
+    "icons": {
+        "16": "keyboard.png",
+        "32": "keyboard.png",
+        "48": "keyboard.png",
+        "128": "keyboard.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "background.js",
+        "type": "module"
     },
     "host_permissions": [
         "http://*/*",

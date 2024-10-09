@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Text Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h2>KeySwap</h2>
+
+    <div class="text-wrapper">
+        <img src="./clipboard.svg" alt="Description of SVG" width="24" height="24">
+        <p>Original Text</p>
+    </div>
+    <textarea id="originalText" class="textBox" placeholder="Type or paste text here..."></textarea>
+
+    <div class="text-wrapper">
+        <img src="./magic-wand.svg" alt="Description of SVG" width="24" height="24">
+        <p>Converted Text</p>
+    </div>
+
+    <div id="output" class="textBox">Converted text will appear here</div>
+    <div class="text-wrapper">
+        <button id="convertBtn">Convert</button>
+
+        <!-- <div class="spacer"></div> -->
+        <!-- <button id="replaceBtn">Replace Text</button> -->
+    </div>
+
+
+
+    <script type="module" src="popup.js"></script>
+</body>
+
+</html>
